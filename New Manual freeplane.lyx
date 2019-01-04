@@ -145,7 +145,7 @@ kewapo@gmail.com
 
 \begin_layout Left Header
 \begin_inset Graphics
-	filename ../mapa/freeplane-icon.jpg
+	filename Archivos/freeplane-icon.jpg
 	lyxscale 12
 	scale 12
 
@@ -155,13 +155,11 @@ kewapo@gmail.com
 \end_layout
 
 \begin_layout Color Box Setup
-
 enhanced, tcbox raise base, size=small, halign=center, nobeforeafter, arc=0.4pt,
  frame style={left color=white, right color=gray}
 \end_layout
 
 \begin_layout New Color Box Type
-
 \begin_inset Argument 2
 status open
 
@@ -6701,7 +6699,7 @@ Los 6 estilos que hemos definido
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -6945,7 +6943,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../mapa/Split_ideas.png
+	filename Archivos/Split_ideas.png
 	lyxscale 25
 	scale 50
 
@@ -7101,7 +7099,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../mapa/Organizar_hor_vert.png
+	filename Archivos/Organizar_hor_vert.png
 	lyxscale 25
 	scale 50
 
@@ -7152,7 +7150,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../mapa/split_ejemplo.png
+	filename E:/PERSONAS/JAVI/TRABAJO/SACYL/MindMaps/groovy-freeplane/mapas mentales/Archivos/split_ejemplo.png
 	lyxscale 25
 	scale 45
 

@@ -1,0 +1,7305 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\begin_preamble
+%Usado para dibujar las teclas
+\tcbuselibrary{skins}
+
+
+% Marco redondeado para poner teclas
+% Necesita el módulo marcos coloreados y poner
+% Un entorno de tipo Opciones de marco coloreado.
+% Luego se usa poniendo \tecla{Nombre-de-tecla}
+\newcommand{\tecla}{\tcbox}
+
+% Corrige el problema del índice de figuras
+% que aparece por defecto con el número
+% pegado al texto sin ningún espacio
+\makeatletter
+\renewcommand*\l@figure{\@dottedtocline{1}{1.5em}{3em}} 
+\makeatother
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+tcolorbox
+customHeadersFooters
+\end_modules
+\maintain_unincluded_children false
+\language spanish
+\language_package \usepackage[spanish, es-nolists]{babel}
+\inputencoding auto
+\fontencoding global
+\font_roman "lmodern" "default"
+\font_sans "lmss" "default"
+\font_typewriter "lmtt" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_title "Manual de Freeplane"
+\pdf_author "Luis Javier González Caballero"
+\pdf_subject "Freeplane"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 0
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "linkcolor=blue, urlcolor=blue, citecolor=blue"
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 3cm
+\rightmargin 3cm
+\bottommargin 3cm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\listings_params "defaultdialect=Java"
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Manual de Freeplane
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename Archivos/freeplane-icon.jpg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+Luis Javier González Caballero
+\begin_inset Newline newline
+\end_inset
+
+kewapo@gmail.com
+\end_layout
+
+\begin_layout Left Header
+\begin_inset Graphics
+	filename ../mapa/freeplane-icon.jpg
+	lyxscale 12
+	scale 12
+
+\end_inset
+
+ Freeplane
+\end_layout
+
+\begin_layout Color Box Setup
+
+enhanced, tcbox raise base, size=small, halign=center, nobeforeafter, arc=0.4pt,
+ frame style={left color=white, right color=gray}
+\end_layout
+
+\begin_layout New Color Box Type
+
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
+cBoxA
+\end_layout
+
+\end_inset
+
+interior style={left color=yellow!40!white, right color=yellow!60!orange},
+ arc=0pt, width=2cm, drop fuzzy shadow=gray, fontupper=
+\backslash
+tiny, colframe=brown
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Freeplane básico
+\end_layout
+
+\begin_layout Chapter
+Mapas mentales
+\end_layout
+
+\begin_layout Section
+Introducción
+\end_layout
+
+\begin_layout Standard
+Un mapa 
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Qué son
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+mental es un diagrama usado para representar palabras, ideas, tareas, lecturas,
+ dibujos, u otros conceptos ligados y dispuestos radicalmente alrededor
+ de una palabra clave o de una idea central.
+ Son una forma lógica y creativa de tomar notas, organizar, asociar y expresar
+ ideas, que consiste, literalmente, en cartografiar nuestras reflexiones
+ sobre un tema.
+ Los mapas mentales son herramientas muy útiles::
+\end_layout
+
+\begin_layout Itemize
+Favorecen la producción de ideas.
+\end_layout
+
+\begin_layout Itemize
+Mejora la productividad.
+\end_layout
+
+\begin_layout Itemize
+Permite apreciar simultáneamente la visión global del problema así como
+ sus detalles.
+\end_layout
+
+\begin_layout Itemize
+Favorece la memorización.
+\end_layout
+
+\begin_layout Standard
+Freeplane es una aplicación para crear mapas mentales.
+ Es multiplataforma, por lo cual funciona en Windows, Linux y Mac.
+ No solo nos permiten dibujar mapas mentales.
+ Además también tiene herramientas para visualizarlos: podemos plegar nodos,
+ desplegarlos, hacer zoom, añadir notas y fórmulas a los nodos y muchas
+ otras cosas que veremos en este manual.
+\end_layout
+
+\begin_layout Standard
+Los elementos constructivos básicos son los nodos y los enlaces entre ellos.
+ Podemos ver el área de trabajo de Freeplane en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Pantalla-de-Freeplane"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ La web donde podemos encontrar esta aplicación es www.freeplane.org desde
+ donde podremos descargarla.
+\end_layout
+
+\begin_layout Section
+La sociedad de la información
+\end_layout
+
+\begin_layout Standard
+La 
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Exceso de información
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ sociedad actual es considerada como sociedad de la información.
+ Tenemos acceso a ingentes cantidades de datos y conceptos que, o bien necesitar
+emos integrar en la estructura conceptual de nuestro cerebro o analizar
+ las opciones que se nos presentan.
+ Esta exposición constante a nuevos datos se da en todos los estadios de
+ desarrollo de la persona, desde la escuela hasta el mundo de la empresa.
+\end_layout
+
+\begin_layout Itemize
+En el mundo académico confiamos en que las capacidades de aprendizaje de
+ nuestro cerebro nos sirvan para salir airosos.
+\end_layout
+
+\begin_layout Itemize
+En el mundo empresarial confiamos tanto en nuestra capacidad de análisis
+ como en nuestra intuición para realizar un análisis correcto.
+ A menudo efectuamos listas, planes y programaciones para ayudarnos.
+\end_layout
+
+\begin_layout Standard
+Sin embargo contamos con herramientas más potentes que pueden facilitarnos
+ estas tareas:
+\end_layout
+
+\begin_layout Description
+mapas
+\begin_inset space ~
+\end_inset
+
+conceptuales: Diagrama en el cual anotamos en cajas los conceptos que nos
+ interesan, indicando mediante líneas que los enlazan las relaciones existentes
+ entre ellos.
+ A diferencia de los mapas mentales no se distribuyen entorno a una idea
+ central.
+ Tienen una forma de red conceptual y se utilizan en la comprensión de problemas
+ complejos.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mapa conceptual
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/mapa_conceptual.png
+	lyxscale 50
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+mapas
+\begin_inset space ~
+\end_inset
+
+mentales: Anotamos las distintas ideas entorno a una idea central.
+ Facilita la generación de ideas y sirve para aclarar problemas complejos.
+ También simplifica la memorización y aprendizaje significativo.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mapa mental
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/mapa_mental.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+El cerebro
+\end_layout
+
+\begin_layout Standard
+El cerebro de las personas se estructura en capas.
+ En la más externa tenemos las distintas capacidades conscientes.
+ Con ella podemos dirigir nuestro pensamiento y utilizar sus habilidades
+ analíticas, visuales, auditivas, etc.
+ en nuestro beneficio de forma consciente.
+ Sin embargo hay capas internas a las que es más complicado acceder.
+ Conforman nuestra intuición y es donde el cerebro envía toda la información
+ 
+\begin_inset Quotes eld
+\end_inset
+
+vieja
+\begin_inset Quotes erd
+\end_inset
+
+ para evitar saturar a la capa externa.
+ A menudo este acceso lo obtenemos en forma de ideas repentinas ó intuiciones,
+ asociaciones de ideas o simplemente sensaciones o 
+\begin_inset Quotes eld
+\end_inset
+
+corazonadas
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Si bien podemos usar conscientemente nuestras habilidades analíticas, visuales,
+ etc, no podemos decir lo mismo de las habilidades que residen en las zonas
+ interiores.
+ Nuestro cerebro funciona mediante asociaciones automáticas: al pensar en
+ una idea el cerebro la encadena con nuevos conceptos.
+ Para potenciar nuestra capacidad mental y nuestra creatividad podemos servirnos
+ de los mapas mentales cuya eficacia se basa en el pensamiento radiante:
+ el cerebro genera nuevas ideas a partir de una idea principal básica.
+\end_layout
+
+\begin_layout Standard
+De esta forma un mapa mental es una herramienta gráfica que nos da acceso
+ al enorme potencial de nuestro cerebro.
+ Su eficacia se basa en que funciona de forma análoga a la de nuestra mente:
+ del mismo modo que la mente funciona describiendo círculos alrededor de
+ una idea central, en un mapa mental colocamos la idea sobre la que queremos
+ trabajar en el centro y añadimos nuevas ideas a medida que van surgiendo
+ situándolas alrededor de esa idea principal.
+ Se desarrolla desde el centro y nos permite tener una visión global y organizad
+a de la información.
+ Es la forma más sencilla de gestionar el flujo de información que genera
+ nuestro cerebro.
+\end_layout
+
+\begin_layout Section
+Procesando la información
+\end_layout
+
+\begin_layout Standard
+La antigua manera de procesar información linealmente de izquierda a derecha
+ crea numerosos problemas cuando se trata de organizar todos los datos que
+ recibimos.
+ Necesitamos un modo más eficaz para representar todo ese torrente de ideas.
+ No sólo en párrafos sucesivos de texto escrito sino también englobando
+ elementos cognitivos de ambos hemisferios cerebrales.
+ Los mapas mentales nos permiten 
+\begin_inset Quotes eld
+\end_inset
+
+Ver nuestros pensamientos
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Podemos utilizarlos para:
+\end_layout
+
+\begin_layout Itemize
+Organizar la información.
+\end_layout
+
+\begin_layout Itemize
+Separar lo trivial de lo importante.
+\end_layout
+
+\begin_layout Itemize
+Recopilación sencilla y flexible de datos.
+\end_layout
+
+\begin_layout Itemize
+Estructurar hechos.
+\end_layout
+
+\begin_layout Itemize
+Aclarar ideas.
+\end_layout
+
+\begin_layout Itemize
+Facilitar la comprensión de temas complejos.
+\end_layout
+
+\begin_layout Itemize
+Retención natural y práctica de las ideas.
+\end_layout
+
+\begin_layout Itemize
+Planificación estratégica.
+\end_layout
+
+\begin_layout Itemize
+Comunicaciones efectivas.
+\end_layout
+
+\begin_layout Section
+Elaboración de los mapas mentales
+\end_layout
+
+\begin_layout Standard
+Para 
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Elaboración de mapas mentales
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ la construcción de un mapa mental partiremos de una superficie blanca sin
+ líneas ni marcas.
+ Lo primero y más importante a la hora de su elaboración es tener claro
+ su propósito.
+ Para ello definiremos claramente la idea principal.
+ Estos son los pasos para su construcción:
+\end_layout
+
+\begin_layout Enumerate
+Identificar la idea principal.
+ Anotarla en el centro del mapa.
+\end_layout
+
+\begin_layout Enumerate
+En torno a esta idea central ir anotando las ideas relacionadas con el tema.
+ Escribir estos subtemas alrededor de la idea central.
+ Tener en cuenta que pondremos cada idea en una rama diferente del mapa.
+\end_layout
+
+\begin_layout Enumerate
+Añadir colores, imágenes y símbolos que identifiquen a todas estas ideas.
+ Esto ayudará a nuestro cerebro en la elaboración del mapa.
+\end_layout
+
+\begin_layout Enumerate
+Desarrollar los subtemas ramificando las ideas que parten del centro del
+ mapa.
+ Hay que simplificar al máximo el contenido del mapa.
+\end_layout
+
+\begin_layout Standard
+Hay varias reglas que nos pueden ayudar:
+\end_layout
+
+\begin_layout Enumerate
+Empieza en el centro de la hoja en blanco.
+ De esa forma las ideas podrán moverse en todas direcciones.
+\end_layout
+
+\begin_layout Enumerate
+Dibuja en el centro una imagen que simbolice la idea principal.
+ Así establecerás un núcleo de atención.
+\end_layout
+
+\begin_layout Enumerate
+Utiliza muchos colores.
+ Los colores despiertan tu creatividad.
+\end_layout
+
+\begin_layout Enumerate
+Partiendo de la idea principal traza ramas de distintos colores hacia el
+ exterior con las palabras clave más importantes.
+ Haz las líneas más finas a medida que te alejas del centro.
+\end_layout
+
+\begin_layout Enumerate
+Traza líneas curvas en lugar de rectas.
+ Son menos aburridas.
+\end_layout
+
+\begin_layout Enumerate
+Trata de utilizar una o dos palabras clave por cada línea.
+ Es más fácil que recordar una frase completa.
+\end_layout
+
+\begin_layout Enumerate
+Utiliza todas las imágenes que puedas.
+\end_layout
+
+\begin_layout Standard
+Aunque podemos construirlos utilizando papel, lápices y pinturas el uso
+ de aplicaciones específicas añaden rapidez y versatilidad en su realización.
+ Este tipo de software nos permite de forma sencilla no solo 
+\begin_inset Quotes eld
+\end_inset
+
+pintar
+\begin_inset Quotes erd
+\end_inset
+
+ los conceptos y su relación, sino también modificar su estructura cambiando
+ la ubicación de ramas y nodos según nos apetezca.
+ Además como tenemos acceso a gran cantidad de iconos, imágenes e ilustraciones
+ de forma muy sencilla su uso en nuestro software favorito de mapas mentales
+ potencia aún más su utilidad.
+ Freeplane pone a nuestro alcance una enorme cantidad de posibilidades que
+ analizaremos en este manual.
+\end_layout
+
+\begin_layout Section
+Ejemplos
+\end_layout
+
+\begin_layout Standard
+Vamos a ver qué podemos esperar.
+ Freeplane es una aplicación muy versátil.
+ Puede crear mapas mentales de estilos muy distintos.
+ Desde los aconsejados por Tony Buzan con colores e imágenes hasta uno más
+ sobrio con líneas rectas y sin adornos.
+ A continuación se muestran algunas ideas.
+\end_layout
+
+\begin_layout Subsection
+Mapas al estilo de Tony Buzan
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mapa al estilo de Tony Buzan
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/mapa_modelo1.png
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Mapa de Gestión
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mapa usado para la gestión
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/mapa_modelo2.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Estos mapas utilizan líneas horizontales y nodos en burbuja.
+ Se le pueden añadir ciertas imágenes.
+ Asimismo, suelen utilizarse nodos de anchos uniformes (igual valor en máximo
+ y en mínimo).
+ En las figuras aparecen dos ejemplos de este tipo de mapas
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mapa para gestionar una agenda
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/Agenda.png
+	lyxscale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Mapa circular
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mapa circular
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/mapa_modelo3.png
+	lyxscale 50
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si damos a los nodos forma oval y marcamos uniforme podemos conseguir el
+ efecto que aparece en la imagen.
+\end_layout
+
+\begin_layout Standard
+Utilizando correctamente todos los elementos antes descritos tenemos una
+ herramienta muy versátil.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mapa: ¿Quién soy?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/Yo.png
+	lyxscale 25
+	scale 66
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Comenzando con Freeplane
+\end_layout
+
+\begin_layout Section
+Instalación
+\end_layout
+
+\begin_layout Standard
+Puedes
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Instalación
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ encontrar Freeplane en https://www.freeplane.org.
+ Sólo tienes que acceder a este sitio y descargarla pinchando en los enlaces
+ que aparecen allí.
+ Como verás, se distribuye con licencia 
+\begin_inset Quotes eld
+\end_inset
+
+GNU Free Documentation License
+\begin_inset Quotes erd
+\end_inset
+
+ que permite su uso gratuito y libre.
+ Hay versiones para Windows, Linux y Mac lo que la convierte en una de las
+ aplicaciones para mapas mentales más versátiles.
+ Para instalarla únicamente tienes que lanzar el ejecutable y seguir los
+ pasos que te van apareciendo.
+ Es una tarea sencilla.
+ Únicamente asegúrate de tener actualizada tu versión de Java.
+ 
+\end_layout
+
+\begin_layout Section
+La ventana de la aplicación
+\end_layout
+
+\begin_layout Standard
+Cuando arrancamos Freeplane nos aparece el área de trabajo con un mapa contenien
+do únicamente el nodo raíz.
+ Pinchando la tecla 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tecla{INSERT}
+\end_layout
+
+\end_inset
+
+ insert añadiremos nodos a este primero.
+ Podemos continuar moviéndonos por los nuevos nodos con las flechas de desplazam
+iento y añadiendo otros nuevos.
+ Otras características de freeplane es que podemos hacer zoom a los mapas
+ o buscar un concepto entre todos los mapas pinchando el icono del lápiz
+ de la barra superior, que es el penúltimo.
+ Una vez tenemos la estructura del mapa podremos darle formato a cada nodo
+ y añadir iconos, figuras y otros elementos.
+\end_layout
+
+\begin_layout Standard
+Las partes de la ventana de freeplane son las siguientes (ver figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Pantalla-de-Freeplane"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+):
+\end_layout
+
+\begin_layout Itemize
+Barra de menús en la parte superior (1).
+ 
+\end_layout
+
+\begin_layout Itemize
+Barra de herramientas con iconos para guardar, abrir, estilo del nodo, fuente...
+ (2).
+\end_layout
+
+\begin_layout Itemize
+Barra con los mapas abiertos (3).
+\end_layout
+
+\begin_layout Itemize
+Espacio central para dibujar el mapa (4).
+\end_layout
+
+\begin_layout Itemize
+Barra de iconos en el lateral izquierdo (5).
+\end_layout
+
+\begin_layout Itemize
+\noindent
+Panel de formatos, a la derecha (6).
+\end_layout
+
+\begin_layout Itemize
+Panel de notas que podemos posicionarlo de forma flotante, a la derecha
+ o en la parte inferior (7).
+\end_layout
+
+\begin_layout Itemize
+Flecha que nos sirve para mostrar u ocultar el panel de formato lateral
+ (8).
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Pantalla-de-Freeplane"
+
+\end_inset
+
+Pantalla de Freeplane
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/Freeplane_ventana.png
+	lyxscale 75
+	scale 62
+	rotateAngle 90
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Así es Freeplane
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Creando el primer mapa
+\end_layout
+
+\begin_layout Standard
+Cuando 
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Primer paso
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+lanzamos la aplicación nos aparece con un mapa vacío que contiene únicamente
+ el nodo raíz seleccionado.
+ Vamos a cambiarle el texto.
+ Para ello únicamente tenemos que escribirlo que deseamos, en nuestro caso
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Planificación del proyecto
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Primer paso
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/mapa_f1.png
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A partir de este primer nodo podemos comenzar a crear nuestro mapa
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Segundo paso
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ Cada vez que pulsemos la tecla 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tecla{INSERT}
+\end_layout
+
+\end_inset
+
+ se añadirá una nueva rama.
+ Se añaden alternativamente a la derecha y a la izquierda.
+ Pulsando esta tecla 5 veces crearemos las ramas que necesitamos.
+ Las seleccionaremos una a una con el ratón cambiando el texto.
+\end_layout
+
+\begin_layout Standard
+Luego añadiremos algunos iconos a las ramas.
+ Para ello mostraremos la barra de iconos que es elemento (5) en la figura
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Pantalla-de-Freeplane"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Si no aparece visible podéis mostrarla pinchando en Ver / Controles / (Des)acti
+var barra de herramientas izquierda.
+ Ahora ya podremos añadir cuantos iconos queramos a los nodos.
+ Para ello pincharemos en el nodo que deseemos y luego en el icono elegido
+ que aparecerá inmediatamente dibujado a la izquierda del texto.
+ 
+\end_layout
+
+\begin_layout Standard
+Otra cosa que podemos hacer es cambiar el color del nodo y el tipo de borde
+ con el panel de formato de la derecha (elemento 6 en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Pantalla-de-Freeplane"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Las opciones que tendremos que cambiar son las del apartado colores del
+ nodo, forma del nodo y borde del nodo en dicho panel.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Segundo paso
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/mapa_f2.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lo siguiente es crear las tareas del proyecto añadiendo 4 nurvos nodos a
+ partir de 
+\begin_inset Quotes eld
+\end_inset
+
+Tareas del proyecto
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Tercer paso
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ En estas tareas crearemos iconos de progreso pinchando en el menú Editar
+ / Iconos / Progreso.
+ La tarea 1 contiene un progreso aumentado mientras que el resto un progreso
+ normal que añadiremos pinchando en Editar / Iconos / progreso / aumentar
+ progreso.
+ Además, hay un nodo sumario en las tareas 2 a 4 que se crea seleccionándolas
+ y pinchando en 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tecla{ALT}
+\end_layout
+
+\end_inset
+
+ + 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tecla{MAYUSCULAS}
+\end_layout
+
+\end_inset
+
+ + 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tecla{INSERT}
+\end_layout
+
+\end_inset
+
+ o con el menú Editar / Nuevo nodo / Nuevo nodo principal (nodos seleccionados).
+\end_layout
+
+\begin_layout Standard
+En el nodo gente añadiremos a nuestros colaboradores con iconos en sus nodos.
+ Además.
+ hemos copiado las tareas a las que se encargarán pegándolas a partir de
+ ellos como clones: (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tecla{CTRL}
+\end_layout
+
+\end_inset
+
+ + 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tecla{C}
+\end_layout
+
+\end_inset
+
+) para copiar la tarea y 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tecla{CTRL}
+\end_layout
+
+\end_inset
+
+ + 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tecla{D}
+\end_layout
+
+\end_inset
+
+ para pegarla como clon).
+ Los nodos clones cambian simultáneamente al modificar uno de ellos.
+\end_layout
+
+\begin_layout Standard
+El resto son nodos normales que hemos añadido pinchando en 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tecla{INSERT}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Una vez finalizado obtenemos la siguiente fase de nuestro mapa en la que
+ podemos ver:
+\end_layout
+
+\begin_layout Itemize
+Hay algunos iconos, como en los nodos hijo de la raíz.
+\end_layout
+
+\begin_layout Itemize
+El tipo de los nodos raíz y sus hijos es 
+\begin_inset Quotes eld
+\end_inset
+
+burbuja
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Hemos cambiado sus colores
+\end_layout
+
+\begin_layout Itemize
+Hemos añadido unos iconos de progreso normales en las tareas 2, 3 y 4 (Editar
+ / Iconos / Progreso / Subir nivel)
+\end_layout
+
+\begin_layout Itemize
+Hemos añadido un icono de progreso mayor en la Tarea 1 (Editar / Iconos
+ / Progreso / Progreso aumentado 10%)
+\end_layout
+
+\begin_layout Itemize
+Hemos subido el progreso de la Tarea 2 un par de veces haciendo doble click
+ sobre el círculo de progreso (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tecla{CTRL}
+\end_layout
+
+\end_inset
+
+ + doble click para bajar progreso).
+\end_layout
+
+\begin_layout Itemize
+En cada una de las personas hemos añadido clones a las tareas de las que
+ se encargan.
+ De esta manera si cambiamos algo en la Tarea 1 de Carolina se actualiza
+ automáticamente en las Tareas del proyecto.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tercer paso
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/mapa_f3.png
+	lyxscale 60
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Uso del mapa
+\end_layout
+
+\begin_layout Standard
+Ya
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Guardando el mapa
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ tenemos la versión inicial de nuestro mapa.
+ Pinchamos en Archivo / Guardar para evitar perder el trabajo.
+\end_layout
+
+\begin_layout Standard
+Ahora 
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Añadiendo nodos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+podremos continuar rellenandolo.
+ Seguramente tendremos que añadir nuevas tareas e incluso podremos contratar
+ a un nuevo colaborador para realizarlas.
+ Esto, como hemos visto, lo conseguimos pinchando en el nodo y luego en
+ la tecla 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tecla{INSERT}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+También
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Icono de progreso
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ podemos aumentar el porcentaje de finalización de cada tarea haciendo doble
+ click encima del icono de progreso expandido.
+\end_layout
+
+\begin_layout Standard
+Otra
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Mover nodos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ cosa que podemos hacer es mover un nodo.
+ Por ejemplo, para cambiar una tarea de persona sólo tenemos que pinchar
+ encima y arrastrarla hacia la persona elegida.
+ También podemos colocar los nodos hijo de 
+\begin_inset Quotes eld
+\end_inset
+
+Elementos para ordenar
+\begin_inset Quotes erd
+\end_inset
+
+ en sus ubicaciones definitivas de la misma forma: arrastrándolas al nodo
+ que corresponda.
+ A la hora de soltar el nodo que queremos mover en su nueva ubicacion, Freeplane
+ nos da dos opciones: si lo soltamos en el borde esterno del nodo lo pondremos
+ como hijo suyo.
+ sin embargo, si lo hacemos en su borde superior será su hermano y se colocará
+ encima de él.
+ 
+\end_layout
+
+\begin_layout Standard
+Si
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Zoom
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ vemos que el mapa es muy pequeño podemos hacer zoom con el desplegable
+ de la barra superior de herramientas ó con la ruleta del ratón si mantenemos
+ pulsada la tecla 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tecla{CTRL}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Si
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Expadir 
+\begin_inset Newline newline
+\end_inset
+
+Colapsar
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ alguna de los nodos tiene una rama demasiado extensa podremos colapsarla
+ .
+ Para ello observaremos los pequeños circulitos que aparecen al final del
+ nodo al pasar con el ratón sobre él.
+ En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Mapa-expandido"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ vemos una rama extensa expandida con el circulito para poder colapsarla
+ que ha aparecido al poner el ratón sobre él.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Mapa-expandido"
+
+\end_inset
+
+Mapa expandido
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/Espandir.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pinchando sobre ese nodo esa rama se cerrará, apareciendo ahora el mapa
+ de la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Mapa-colapsado"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Vemos que en una rama cerrada aparece continuamente el círculito que nos
+ servirá para abrirla sin necesidad de tener que poner el ratón encima del
+ nodo.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Mapa-colapsado"
+
+\end_inset
+
+Mapa colapsado
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/Colapsar.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Nueva vista de mapa
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+aún así es demasiado extenso podemos abrir otra vista del mismo mapa con
+ el menú Ver / Nueva Vista del mapa.
+ Si arrastramos ahora la nueva pesaña que ha aparecido a uno de los bordes
+ podremos ver varias zonas del mapa simultaneamente.
+\end_layout
+
+\begin_layout Standard
+Y si queremos presentar el proyecto a nuestros colaboradores podremos poner
+ el mapa en pantalla completa con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tecla{F11}
+\end_layout
+
+\end_inset
+
+ y usar las opciones de presentación básicas accesibles en el menú Ver /
+ Ver configuración y luego las opciones Spootlight y Centrar el nodo.
+\end_layout
+
+\begin_layout Standard
+Cuando 
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Guardando el mapa
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+hayamos terminado ya podemos guardar el mapa mediante el menú Archivo, Guardar
+\end_layout
+
+\begin_layout Standard
+En resumen, podemos realizar las siguientes actividades:
+\end_layout
+
+\begin_layout Itemize
+Seleccionar nodos: Freeplane está configurado para que si nos detenemos
+ brevemente en un nodo la aplicación lo selecciona.
+ Este comportamiento podemos cambiarlo en las Preferencias, en la pestaña
+ de comportamiento si modificamos la opción 
+\begin_inset Quotes eld
+\end_inset
+
+Método de selección
+\begin_inset Quotes erd
+\end_inset
+
+.
+ También podemos elegir múltiples nodos haciendo click encima de ellos mientras
+ tenemos pulsada la tecla 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tecla{CTRL}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Expandir y colapsar nodos.
+ Para ello pincharemos en unos circulitos que hay al final de cada nodo.
+ (ver figuras 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Mapa-expandido"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Mapa-colapsado"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Itemize
+Buscar un nodo que contenga una cadena concreta.
+ Para ello pincharemos en Editar / Buscar / Buscar.
+\end_layout
+
+\begin_layout Itemize
+Ver el mapa en una escala determinada.
+ Podemos hacer zoom con la primera lista desplegable que aparece en la barra
+ de herramientas, elemento (2) en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Pantalla-de-Freeplane"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Poner Freeplane en pantalla completa pulsando la tecla 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tecla{F11}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Ver varios mapas a la vez.
+ Para ello moveremos la pestaña del mapas que queramos a uno de los bordes
+ de la aplicación.
+\end_layout
+
+\begin_layout Itemize
+Ver secciones distintas del mismo mapa en dos ventanas de Freeplane.
+ Podemos abrir otra pestaña con el mismo mapa pinchando en Ver / Nueva vista
+ de mapa y luego mover dicha pestaña a uno de los bordes del area de trabajo
+ de Freeplane.
+\end_layout
+
+\begin_layout Itemize
+Ver un esquema del mapa si vamos al menú Ver / Ver configuración / Vista
+ en esquema.
+\end_layout
+
+\begin_layout Section
+Elementos de un mapa
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Elementos-mapa"
+
+\end_inset
+
+Elementos de un mapa
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/mapa_elementos.png
+	lyxscale 75
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Un mapa 
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Elementos de un mapa
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+no solo está formado por las ideas que vamos añadiendo (nodos) y por los
+ enlaces a estas ideas.
+ Freeplane dispone de muchos más elementos que aparecen en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Elementos-mapa"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ marcados con flechas azules.
+ Son los siguientes:
+\end_layout
+
+\begin_layout Description
+Nodo
+\begin_inset space ~
+\end_inset
+
+principal: Es el nodo raíz y está situado en el centro.
+ En la figura anterior es el nodo 
+\begin_inset Quotes eld
+\end_inset
+
+Planificación del proyecto
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+Nodos
+\begin_inset space ~
+\end_inset
+
+hijos: Parten de un nodo situado ya en el mapa.
+ Podemos expandirlos y colapsarlos.
+\end_layout
+
+\begin_layout Description
+Nodo
+\begin_inset space ~
+\end_inset
+
+sumario: Agrupa varios nodos hermanos y sirve para mostrar un resumen.
+ En el mapa anterior, es el nodo 
+\begin_inset Quotes eld
+\end_inset
+
+Pendiente Juan
+\begin_inset Quotes erd
+\end_inset
+
+, a la derecha de las tareas.
+\end_layout
+
+\begin_layout Description
+Nodo
+\begin_inset space ~
+\end_inset
+
+clon: Un nodo que aparece en varias ramas del mapa.
+ Si lo modificamos en una de ellas queda modificado en las demás.
+ Se crean copiando el nodo y pegándolo mediante la combinación de teclas
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tecla{CTRL}
+\end_layout
+
+\end_inset
+
+ + 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tecla{D}
+\end_layout
+
+\end_inset
+
+ ó pinchando en el menú Editar / Pegar clon.
+ Podemos identificarlo porque al seleccionarlo con el ratón aparece un pequeño
+ cuadro a su izquierda.
+ Son los nodos Tarea1 a Tarea 4.
+ Vemos en los nodos hijo de 
+\begin_inset Quotes eld
+\end_inset
+
+Gente
+\begin_inset Quotes erd
+\end_inset
+
+ esos cuadritos, a la izquierda de los iconos de progreso de las tareas.
+ 
+\end_layout
+
+\begin_layout Description
+Bordes: Líneas que unen el nodo padre con los nodos hijo.
+ 
+\end_layout
+
+\begin_layout Description
+Enlaces: Apuntan a información que puede ser del mapa, de otros mapas ó
+ externa a freeplane.
+ Al pinchar sobre ellos nos remite a dicha información a la que se refieren.
+ En la figura aparece como una pequeña flechita a la izquierda del nodo
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Documentos
+\begin_inset Quotes erd
+\end_inset
+
+, después del icono.
+\end_layout
+
+\begin_layout Description
+Conectores: Líneas de unión que se ponen entre nodos arbitrarios del mapa.
+\end_layout
+
+\begin_layout Description
+Atributos: Elementos bajo los nodos que contienen datos numéricos ó textuales.
+ Son propiedades que podemos añadir al nodo si pinchamos con el botón derecho
+ del ratón y elegimos Editar atributos.
+ Están compuestos por un nombre y un valor.
+ En el nodo Contabilidad son 
+\begin_inset Quotes eld
+\end_inset
+
+Coste
+\begin_inset Quotes erd
+\end_inset
+
+ e 
+\begin_inset Quotes eld
+\end_inset
+
+Impuestos
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+Iconos: Hay iconos normales que podemos añadir con la barra de iconos de
+ la izquierda (Freeplane viene con un juego estándar de iconos que se puede
+ ampliar) ó iconos de progreso.
+\end_layout
+
+\begin_layout Description
+Imágenes: También podemos añadir imágenes en los nodos.
+\end_layout
+
+\begin_layout Section
+Elementos de un nodo
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Elementos-nodos"
+
+\end_inset
+
+Elementos de los nodos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/Nodos_elementos.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hasta 
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Elementos de un nodo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ahora hemos visto a cada una de las ideas como un nodo que contiene un texto.
+ Sin embargo, como hemos visto en la sección anterior, un nodo es mucho
+ más.
+ En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Elementos-nodos"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se ven los elementos básicos de los nodos.:
+\end_layout
+
+\begin_layout Description
+Texto
+\begin_inset space ~
+\end_inset
+
+del
+\begin_inset space ~
+\end_inset
+
+nodo: Es el elemento básico y fundamental del nodo y el que vemos en el
+ mapa.
+ Habitualmente es texto simple pero podemos añadir código HTML si lo editamos
+ pulsando 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tecla{ALT}
+\end_layout
+
+\end_inset
+
+ + 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tecla{INTRO}
+\end_layout
+
+\end_inset
+
+.
+ Aparecerá un editor con dos pestañas abajo: Vista de disposición (para
+ incluir texto normal) y Vista de código HTML para incluir más formatos.
+\end_layout
+
+\begin_layout Description
+Detalles
+\begin_inset space ~
+\end_inset
+
+del
+\begin_inset space ~
+\end_inset
+
+nodo: Texto, figuras y otros elementos que aparecen en el nodo.
+ También podemos añadir elementos HTML.
+\end_layout
+
+\begin_layout Description
+Iconos: Iconos que añadimos al nodo desde la barra lateral.
+\end_layout
+
+\begin_layout Description
+Nota: Normalmente un nodo consta de un texto corto.
+ Si deseamos añadir explicaciones extensas tendremos que añadir una nota
+ al nodo.
+ Podemos mostrar la ventana de notas si pinchamos con el botón dercho en
+ el fondo del mapa y elegimos del menú Mostrar/Esconder ventana de notas.
+ Sólo se mostrará si activamos el panel de notas o si ponemos el cursor
+ sobre el nodo.
+\end_layout
+
+\begin_layout Description
+Atributos: propiedades que añadimos bajo los detalles del nodo.
+ 
+\end_layout
+
+\begin_layout Description
+Enlaces: Enlaces que se ponen en un nodo y que apuntan o bien a otros nodos
+ del mapa o a recursos externos, archivos o páginas web
+\end_layout
+
+\begin_layout Chapter
+Personalizando nuestro mapa
+\end_layout
+
+\begin_layout Section
+El panel de formato
+\end_layout
+
+\begin_layout Standard
+El panel 
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+El panel de formato
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+lateral que aparece en la parte derecha de Freeplane nos va a servir para
+ cambiar el aspecto del mapa.
+ Aparece al pulsar las teclas 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tecla{ALT}
+\end_layout
+
+\end_inset
+
+ + 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tecla{P}
+\end_layout
+
+\end_inset
+
+ ó pinchando en la pequeña flecha del borde derecho (Es el elemento (6)
+ en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Pantalla-de-Freeplane"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) y está dividido en secciones:
+\end_layout
+
+\begin_layout Itemize
+Estilo del nodo.
+ Veremos los estilos más adelante.
+\end_layout
+
+\begin_layout Itemize
+Colores del nodo.
+ Podemos modificar el color del texto y del fondo del nodo .
+\end_layout
+
+\begin_layout Itemize
+Texto del nodo.
+ Tipo de nodo.
+ Normalmente es Estandar pero como veremos más adelante un nodo puede contener
+ una fórmula, código latex o un numero con o sin decimales.
+\end_layout
+
+\begin_layout Itemize
+Forma del nodo.
+ Aparte de la habitual, la forma del nodo puede ser ovalada, rectangular,
+ hexagonal...
+\end_layout
+
+\begin_layout Itemize
+Borde del nodo.
+ Anchura, color y tipo de línea del nodo
+\end_layout
+
+\begin_layout Itemize
+Fuente del nodo.
+ Tipo de letra, tamaño, cursiva, negrita...
+\end_layout
+
+\begin_layout Itemize
+Iconos.
+ Tamaño de los iconos.
+\end_layout
+
+\begin_layout Itemize
+Nubes.
+ Forma y color de la nube (ver más adelante).
+\end_layout
+
+\begin_layout Section
+Modificando el texto del nodo
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Tipo y tamaño de la letra, negrita, cursiva, tachado
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Panel_fuente"
+
+\end_inset
+
+Modificando el texto del nodo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/Panel_fuente.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A la hora de personalizar el mapa es importante no solo tener visible la
+ barra superior que aparece bajo los menús sino también el panel de formato
+ que aparece a la derecha que es el que usaremos casi siempre.
+ Dentro de ese panel hay una sección, 
+\begin_inset Quotes qld
+\end_inset
+
+Fuente del nodo
+\begin_inset Quotes erd
+\end_inset
+
+ que vemos en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Panel_fuente"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Como vemos podemos cambiar la fuente, el tamaño del texto y ponerlo en
+ negrita o cursiva aparte de centrarlo en el nodo o alinearlo a izquierda
+ o derecha.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Tipo de nodo: texto normal, fórmula, número de decimales, forma de la fecha...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Modificando-el-texto"
+
+\end_inset
+
+Modificando el texto del nodo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/Panel_Texto.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A medida que vayamos construyendo más mapas tendremos necesidad de representar
+ no solo texto sino también números o incluso añadir fechas.
+ Aquí es donde interviene la sección 
+\begin_inset Quotes erd
+\end_inset
+
+Texto del nodo
+\begin_inset Quotes erd
+\end_inset
+
+ del panel lateral (ver figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Modificando-el-texto"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) donde escogeremos el formato del número o de la fecha en el desplegable
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Formato
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Alguna de las opciones más usadas son:
+\end_layout
+
+\begin_layout Itemize
+Texto: 
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Formatos: texto, numéricos y de fecha
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+el contenido del nodo se muestra como texto normal
+\end_layout
+
+\begin_layout Itemize
+#0.####: Es un número decimal pero se mostrarán sólo 4 decimales (se redondeará).
+\end_layout
+
+\begin_layout Itemize
+#.00: Número decimal del que se redondeará a 2 decimales
+\end_layout
+
+\begin_layout Itemize
+#: Sólo se mostrará la parte entera.
+\end_layout
+
+\begin_layout Itemize
+#.##%: Es un porcentaje.
+ Se mostrará el número multiplicado por 100.
+\end_layout
+
+\begin_layout Itemize
+d/MM/yy: Es una fecha.
+ Se mostrará el día, mes y año como números separados por la barra inclinada.
+\end_layout
+
+\begin_layout Itemize
+dd-MMM-yyyy: Con este formato el més se mostrará como las tres primeras
+ letras de su nombre.
+\end_layout
+
+\begin_layout Itemize
+HH:mm: Es una hora y se mostrará separada de los minutos con el símbolo
+ de los dos puntos.
+\end_layout
+
+\begin_layout Standard
+Además, en esa misma sección podemos marcar la casilla de numeracion del
+ nodo.
+ Todos los nodos que dependen del mismo padre serán numerados de forma secuencia
+l.
+\end_layout
+
+\begin_layout Section
+Aspecto de los nodos
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Forma y ancho del nodo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Panel_forma"
+
+\end_inset
+
+Modificando la forma del nodo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/Panel_Forma.png
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pasamos ahora a modificar el aspecto que tienen los nodos.
+ Si miramos el apartado 
+\begin_inset Quotes eld
+\end_inset
+
+Forma del nodo
+\begin_inset Quotes erd
+\end_inset
+
+ que aparece reproducido en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Panel_forma"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ vemos que tenemos opción de modificar la forma del nodo así como sus márgenes.
+\end_layout
+
+\begin_layout Standard
+También aquí indicaremos a freeplane qué ancho mínimo y máximo tiene el
+ nodo.
+ Esto nos va a servir para obligar a los nodos del mapa sean del mismo ancho.
+ Otra opción importante es indicar a Freeplane qué espacio queremos que
+ haya entre los nodos hermanos (huevo en hijo vertical).
+\end_layout
+
+\begin_layout Standard
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Tipos-de-nodos"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ aparecen todas las formas que podemos dar a los nodos:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Tipos-de-nodos"
+
+\end_inset
+
+Formas disponibles para los nodos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/Formato_nodos.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Bifurcación: 
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Formas de los nodos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Es la habitual.
+ Consiste únicamente en una línea debajo del nodo.
+\end_layout
+
+\begin_layout Description
+Burbuja: Se trata de un recuadro con los bordes redondeados.
+\end_layout
+
+\begin_layout Description
+Rectángulo: Damos al nodo forma rectangular.
+ Se convierte en un cuadrado marcando más abajo la opción de 
+\begin_inset Quotes eld
+\end_inset
+
+Uniforme
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+Oval: Forma ovalada.
+ Puede convertirse en un círculo marcando más abajo la opción de 
+\begin_inset Quotes eld
+\end_inset
+
+Uniforme
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+Wide
+\begin_inset space ~
+\end_inset
+
+hexagonal: Hexágono apoyado en una de sus caras.
+\end_layout
+
+\begin_layout Description
+Narrow
+\begin_inset space ~
+\end_inset
+
+hexagonal: Hexágono apoyado en uno de sus vértices.
+\end_layout
+
+\begin_layout Standard
+Si marcamos 
+\begin_inset Quotes eld
+\end_inset
+
+Uniform
+\begin_inset Quotes erd
+\end_inset
+
+ convertimos a nuestra forma en una forma regular (todos los lados iguales).
+\end_layout
+
+\begin_layout Standard
+Justo debajo de la forma del nodo hay otra sección interesante, 
+\begin_inset Quotes eld
+\end_inset
+
+Borde del nodo
+\begin_inset Quotes erd
+\end_inset
+
+ (ver figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Panel_borde_nodo"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Se refiere a las líneas utilizadas para dibujar la forma de los nodos.
+ Las más importantes son:
+\end_layout
+
+\begin_layout Itemize
+Grosor de la línea
+\end_layout
+
+\begin_layout Itemize
+Tipo de línea: punteada, con rayas, contínua...
+\end_layout
+
+\begin_layout Itemize
+Color del borde del nodo
+\end_layout
+
+\begin_layout Standard
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Grosor, color y tipo de línea para los bordes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Panel_borde_nodo"
+
+\end_inset
+
+Opciones de los bordes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/Panel_borde_nodo.png
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Mucho cuidado de no confundir el borde del nodo, que es la línea que sirve
+ para dibujar la forma del nodo con el borde que une un nodo padre con sus
+ nodos hijos.
+ La primera se cambia en la seccion 
+\begin_inset Quotes eld
+\end_inset
+
+Borde del nodo
+\begin_inset Quotes erd
+\end_inset
+
+ y la segunda en la sección 
+\begin_inset Quotes eld
+\end_inset
+
+Borde
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Podemos tener un nodo ovalado con la línea punteada pero cuya línea de
+ unión con sus nodos hijos sea continua.
+ Además, el óvalo del nodo podría ser azul y la línea de unión con sus nodos
+ hijos roja.
+\end_layout
+
+\begin_layout Section
+Iconos
+\end_layout
+
+\begin_layout Standard
+En ese apartado modificamos el tamaño con el que se dibujará el icono en
+ cada nodo.
+ Únicamente contiene una propiedad: 
+\begin_inset Quotes eld
+\end_inset
+
+Tamaño del icono
+\begin_inset Quotes erd
+\end_inset
+
+ con el que modificaremos el tamaño con el que se dibujará el icono del
+ nodo.
+\end_layout
+
+\begin_layout Section
+Nubes
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Forma y color de las nubes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/Formato_nubes.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Tipos-de-nubes"
+
+\end_inset
+
+Tipos de nubes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La última sección del panel se refiere a las nubes cuyo aspecto vemos en
+ la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Tipos-de-nubes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Son marcos de diferentes formas alrededor de un grupo de nodos.
+ Dichos marcos pueden ser rectangulares pero también de formas irregulares
+ rectas o redondeadas.
+ Esto le da un atractivo aspecto al mapa.
+\end_layout
+
+\begin_layout Section
+Colores
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Colores-del-nodo"
+
+\end_inset
+
+Colores del nodo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/Colores_del_nodo.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En el apartado 
+\begin_inset Quotes eld
+\end_inset
+
+Colores del nodo
+\begin_inset Quotes erd
+\end_inset
+
+ podemos modificar el color tanto del texto como del fondo del nodo.
+ Sin embargo, además de estos dos elementos, también podemos definir el
+ color de los enlaces entre nodos, para lo cual nos iremos a los apartados
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Borde del nodo
+\begin_inset Quotes erd
+\end_inset
+
+ y 
+\begin_inset Quotes eld
+\end_inset
+
+Bordes
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Estos apartados se muestran en las figuras 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Colores-del-nodo"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Colores-bordes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Panel_borde"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Colores-bordes"
+
+\end_inset
+
+Colores de los bordes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/Colores_bordes.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La diferencia entre los bordes y los bordes del nodo se muestra en la figura
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diferencia-Bordes-bodesnodo"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Veamos esa imagen: si queremos cambiar los bordes utilizamos la sección
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Bordes
+\begin_inset Quotes erd
+\end_inset
+
+ que se muestra en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Panel_borde"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Si por el contrario lo que queremos es cambiar el borde del nodo utilizaremos
+ la sección del panel de la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Colores-bordes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Para cambiar el color de la letra o del fondo del nodo se usa la sección
+ del panel mostrada en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Colores-del-nodo"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diferencia-Bordes-bodesnodo"
+
+\end_inset
+
+Diferencia entre Bordes y Bordes del nodo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/colores_bordes_en_mapa.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Aspecto de los bordes
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Panel_borde"
+
+\end_inset
+
+Opciones de los enlaces entre nodos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/Panel_borde.png
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Freeplane usa la palabra borde para denominar dos elementos: para las líneas
+ que unen los nodos hijos con su nodo padre y para la línea que dibuja la
+ forma del nodo.
+ En esta sección vamos ahora a modificar las líneas que unen los nodos del
+ mapa.
+ En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Panel_borde"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ tenemos las opciones que nos da Freeplane:
+\end_layout
+
+\begin_layout Itemize
+Anchura del borde.
+\end_layout
+
+\begin_layout Itemize
+Tipo de línea: como antes, continua, punteada, etc.
+\end_layout
+
+\begin_layout Itemize
+Color del borde.
+\end_layout
+
+\begin_layout Itemize
+Estilo del borde: es la opción más interesante.
+\end_layout
+
+\begin_layout Standard
+Hay varios estilos de bordes que podemos ver en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Tipos-de-enlaces"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Description
+Lineal.
+ 
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Tipos de bordes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Conexión lineal indirecta uniforme.
+ Su grosor es el mismo en toda su trayectoria.
+\end_layout
+
+\begin_layout Description
+Lineal
+\begin_inset space ~
+\end_inset
+
+con
+\begin_inset space ~
+\end_inset
+
+ángulos.
+ Conexión lineal de grosor variable, mas grueso al principio y más fino
+ al final
+\end_layout
+
+\begin_layout Description
+Horizontal.
+ Conexión con el nodo con líneas horizontales y verticales.
+ Grosor uniforme.
+\end_layout
+
+\begin_layout Description
+Bezier.
+ Es una linea curva de grosor uniforme.
+\end_layout
+
+\begin_layout Description
+Bezier
+\begin_inset space ~
+\end_inset
+
+con
+\begin_inset space ~
+\end_inset
+
+ángulos.
+ Línea curva de grosor variable.
+ Más grueso al principio y va disminuyendo al final
+\end_layout
+
+\begin_layout Description
+Ocultar
+\begin_inset space ~
+\end_inset
+
+el
+\begin_inset space ~
+\end_inset
+
+borde: no se muestra la línea de unión entre el padre y nuestro nodo.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Tipos-de-enlaces"
+
+\end_inset
+
+Tipos de conexión entre nodos (bordes)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/Formato_bordes.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Añadiendo otros elementos
+\end_layout
+
+\begin_layout Section
+Imágenes
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Insertar_imagen_nodo"
+
+\end_inset
+
+Añadir imágenes a los nodos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/insertar_imagen.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Ubicaciones para las imágenes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Además de texto, iconos y atributos en nuestros mapas también pueden aparecer
+ imágenes.
+ Nuestras imágenes pueden aparecer en diferentes ubicaciones:
+\end_layout
+
+\begin_layout Itemize
+Dentro del nodo.
+\end_layout
+
+\begin_layout Itemize
+Bajo el nodo.
+\end_layout
+
+\begin_layout Itemize
+Imagen de fondo del mapa.
+\end_layout
+
+\begin_layout Standard
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Insertar_imagen_nodo"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ están estas opciones.
+\end_layout
+
+\begin_layout Subsection
+Imagen dentro de un nodo
+\end_layout
+
+\begin_layout Standard
+Como hemos visto un nodo es una forma (un cuadrado, óvalo, hexágono) dentro
+ del cual hay un texto y que contiene elementos extra tales como texto bajo
+ él, atributos y enlaces.
+ Sin embargo también podemos hacer que dentro de la forma del nodo aparezca
+ una imagen e incluso una imagen bajo la cual podremos escribir un texto.
+\end_layout
+
+\begin_layout Standard
+Añadir una imagen dentro de un nodo es sencillo.
+ Únicamente hay que pinchar en el menú Editar / Nodo central / Imagen y
+ elegir el fichero de la imagen.
+ Una vez aparezca en el mapa ya podremos hacer doble click en ella y añadirle
+ texto que aparecerá a su lado.
+ Si queremos que aparezca bajo la imagen podemos teclear 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tecla{ALT}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tecla{ENTER}
+\end_layout
+
+\end_inset
+
+ lo cual insertará una nueva línea.
+\end_layout
+
+\begin_layout Subsection
+Imagen bajo el nodo
+\end_layout
+
+\begin_layout Standard
+Es una tarea muy sencilla.
+ Únicamente tenemos que arrastrar la imagen desde el sistema operativo hasta
+ el área de trabajo de Freeplane y ya está.
+ Sin embargo si ya tenemos el nodo en el mapa podemos ir al menú Editar
+ / Propiedades del nodo / Añadir Imagen desde.
+ En ambos casos la imagen aparecerá bajo el texto del nodo.
+\end_layout
+
+\begin_layout Subsection
+Imagen de fondo del mapa
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Imagen_fondo"
+
+\end_inset
+
+Mapa con una imagen de fondo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/Imagen_fondo.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Algo muy interesante es la opción de cambiar el aburrido fondo blanco de
+ todos los mapas.
+ Si nos vamos a Formato / Mapa de fondo / Fondo del mapa podemos elegir
+ un color personalizado para el mapa.
+\end_layout
+
+\begin_layout Standard
+Sin embargo lo mejor es que también podemos añadir una imagen que se mostrará
+ tras el mapa (ver imagen 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Imagen_fondo"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Esto se consigue desde el menú Formato / Mapa de fondo / Imagen de fondo.
+\end_layout
+
+\begin_layout Section
+Atributos
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Aspecto de los atributos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Añadiendo-atributos"
+
+\end_inset
+
+Añadiendo atributos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/atributos.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hemos visto que un nodo tiene un texto, una forma, color, tipo de línea
+ e incluso un detalle bajo él.
+ Ahora veremos los atributos que podemos verlos como propiedades que añadimos
+ a cada nodo.
+ Propiedades que definimos como un nombre de propiedad al que aplicamos
+ un valor.
+ Por ejemplo, en las facturas serían atributos 
+\begin_inset Quotes eld
+\end_inset
+
+Coste
+\begin_inset Quotes erd
+\end_inset
+
+ e 
+\begin_inset Quotes eld
+\end_inset
+
+IVA
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Tendríamos una factura con una propiedad llamada 
+\begin_inset Quotes eld
+\end_inset
+
+Coste
+\begin_inset Quotes eld
+\end_inset
+
+ de valor 1.500, otra propiedad llamada 
+\begin_inset Quotes eld
+\end_inset
+
+IVA
+\begin_inset Quotes erd
+\end_inset
+
+ con el valor 0.15 etc.
+ Si los nodos fueran vehículos podríamos añadir los atributos 
+\begin_inset Quotes eld
+\end_inset
+
+Precio
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+Potencia
+\begin_inset Quotes erd
+\end_inset
+
+ y 
+\begin_inset Quotes eld
+\end_inset
+
+Consumo
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Mediante los atributos ampliamos la utilidad de un nodo con propiedades
+ personalizadas.
+\end_layout
+
+\begin_layout Standard
+Si vamos al mapa que comenzamos en el capítulo 2 veremos que hay un apartado
+ para incluir los documentos del proyecto.
+ Unos documentos fundamentales de todo proyecto son las facturas.
+ Para almacenarlas añadiremos un nodo Facturas hijo del nodo 
+\begin_inset Quotes eld
+\end_inset
+
+Documentos
+\begin_inset Quotes erd
+\end_inset
+
+.
+ En este nodo incluiremos todas las facturas del proyecto, tal y como vemos
+ en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Añadiendo-atributos"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Si deseamos que Freeplane pueda acceder a los detalles de las facturas
+ tales como el coste, el IVA, etc lo más adecuado es añadir dos atributos.
+ Uno para el coste y otro para el IVA.
+ Para añadir estos atributos nos iríamos al panel de formato pero eligiendo
+ la pestaña 
+\begin_inset Quotes eld
+\end_inset
+
+Calendario y atributos
+\begin_inset Quotes erd
+\end_inset
+
+ de la parte superior.
+ En la sección inferior hay dos botones, 
+\begin_inset Quotes eld
+\end_inset
+
+Nuevo atributo
+\begin_inset Quotes erd
+\end_inset
+
+ y 
+\begin_inset Quotes eld
+\end_inset
+
+Anchura óptima
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Pinchando en el primero podemos añadir los atributos que deseemos.
+ Y pinchando en el segundo modifica su ancho para ajustarlo exactamente
+ a su contenido.
+ Hemos puesto como IVA el valor 0.15 escogiendo el formato #.##% para que
+ lo muestre como porcentaje.
+\end_layout
+
+\begin_layout Standard
+Para trabajar con atributos, Freeplane proporciona varias herramientas que
+ veremos más adelante en la sección para usuarios avanzados.
+ Por ejemplo, existe un gestor de atributos accesible desde el menú Editar,
+ Propiedades del nodo, Gestor de atributos mediante el cual podemos restringir
+ los valores que puede contener un atributo, entre otras cosas.
+\end_layout
+
+\begin_layout Section
+Enlaces
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0col%
+width "50col%"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Nodo-con-enlace"
+
+\end_inset
+
+Nodo con enlace
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/Nodo_con_enlace.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+El enlace se muestra como una pequeña flecha roja
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Imaginemos que además de tener almacenados los detalles de las facturas
+ también quisiéramos acceder a los documentos originales al hacer click
+ encima del nodo de la factura.
+ Esto se consigue mediante los enlaces, que funcionan de forma similar a
+ los de cualquier página web: pinchando encima Freeplane nos lleva al destino
+ del enlace.
+ Esto se realiza pinchando con el botón derecho sobre el nodo y eligiendo
+ del menú contextual Enlaces, Añadir enlaces (Seleccionar).
+ Aparecerá un selector de archivos para elegir la factura correspondiente.
+\end_layout
+
+\begin_layout Standard
+Otra forma de añadir enlaces a archivos arrastrar el documento sobre uno
+ de los nodos del mapa como hacíamos con las imágenes.
+ Aparecerá como texto el nombre del fichero y se creará un enlace para que
+ podamos acceder a él haciendo click en él.
+ El enlace tiene la forma de una pequeña flecha roja.
+ Hay dos tipos de enlace: a documentos o lugares externos o a otros nodos.
+\end_layout
+
+\begin_layout Standard
+Al añadir un enlace a un documento aparecerá una pequeña flecha roja al
+ principio del nodo tal y como vemos en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Nodo-con-enlace"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Enlaces internos
+\end_layout
+
+\begin_layout Standard
+Son enlaces entre nodos.
+ Al pinchar encima del nodo con enlace Freeplane nos llevará al nodo enlazado
+ que puede estar en el mapa actual o en otro mapa distinto.
+ Para definirlos pinchamos en el nodo al que queremos añadir el enlace y
+ después el nodo enlazado.
+ Luego del menú contextual que aparece al pinchar este segundo nodo con
+ el botón derecho elegiremos la opción Enlaces / Agregar enlace local ó
+ Editar / Enlaces / Agregar enlace local.
+ 
+\end_layout
+
+\begin_layout Standard
+Si el segundo nodo está en otro mapa el proceso es algo diferente:
+\end_layout
+
+\begin_layout Enumerate
+Iremos al nodo destino y pincharemos con el botón derecho del ratón.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Elegiremos la opción Copiar la URL del nodo.
+\end_layout
+
+\begin_layout Enumerate
+Iremos al nodo donde queremos poner el enlace y elegiremos del menú contextual
+ Enlace / Campo de texto.
+\end_layout
+
+\begin_layout Enumerate
+Pegaremos la URL antes copiada.
+\end_layout
+
+\begin_layout Standard
+Otra forma sería:
+\end_layout
+
+\begin_layout Enumerate
+Nos posicionaremos en el nodo destino y luego en Editar / Enlaces \SpecialChar breakableslash
+ Definir
+ enlace a la etiqueta del ancla.
+ Esto lo fija como un ancla.
+\end_layout
+
+\begin_layout Enumerate
+Nos ponemos en el segundo nodo y elegimos Editar / Enlaces / Convertir enlace
+ a etiqueta del ancla.
+\end_layout
+
+\begin_layout Enumerate
+Nota: si elegimos por el contrario Editar / Enlaces / Crear enlace de una
+ etiqueta de ancla el enlace se hará al revés: el ancla tendrá el enlace
+ y el destino será el enlazado.
+\end_layout
+
+\begin_layout Subsection
+Enlaces externos
+\end_layout
+
+\begin_layout Standard
+Como ya he dicho la forma más sencilla es arrastrar un archivo a uno de
+ los nodos de la ventana de Freeplane.
+ Por ejemplo, si arrastramos la dirección que aparece en el navegador a
+ un nodo se creará un enlace hacia esa página web.
+ Pinchando encima se abrirá el navegador y podremos ver esa página.
+\end_layout
+
+\begin_layout Standard
+Otra forma para añadir un enlace externo es elegir el menú Editar / Enlaces
+ / Elegir archivo.
+ Con eso se establecerá un enlace que nos llevará al archivo antes seleccionado.
+ o también podemos elegir Editar / Enlaces / Campo de texto que nos permite
+ teclear lo que deseemos, por ejemplo, una dirección web.
+\end_layout
+
+\begin_layout Subsection
+Enviar correo
+\end_layout
+
+\begin_layout Standard
+Entrando en Editar / Enlace / Enlace (campo de texto) y tecleando mailto:kewapo@
+gmail.com al pinchar en el nodo se abrirá el editor de correo electrónico
+ para que enviemos ese correo.
+\end_layout
+
+\begin_layout Section
+Fórmulas
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0col%
+width "50col%"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Fórmula"
+
+\end_inset
+
+Fórmula
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/formula_simple.png
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Un nodo 
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Crea un nodo y escribe: = 2 * 3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+también puede contener una formula.
+ Mediante ellas podemos realizar cálculos basándonos en los elementos de
+ otros nodos.
+ Es una expresión que calcula Freeplane de forma dinámica.
+ Puede incluir referencias a otros nodos, operadores aritméticos y funciones
+ matemáticas.
+ Podemos identificar un nodo con fórmula porque Freeplane pone un marco
+ de color verde claro alrededor de él.
+ En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Fórmula"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ aparece un nodo en el cual hemos escrito 
+\begin_inset Quotes eld
+\end_inset
+
+= 2 + 3
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Vemos que aparece un 5.
+\end_layout
+
+\begin_layout Standard
+Para añadir una fórmula a un nodo únicamente tenemos que comenzar a escribir
+ con el símbolo de igual.
+ Por ejemplo, si en el texto de un nodo determinado escribimos = 2 * 3 aparecerá
+ un 6.
+ Otros ejemplos son:
+\end_layout
+
+\begin_layout Itemize
+= 2 + 3: aparecerá el número 5.
+\end_layout
+
+\begin_layout Itemize
+= (3 * 4) + 
+\begin_inset Quotes eld
+\end_inset
+
+ veces
+\begin_inset Quotes erd
+\end_inset
+
+: aparecerá el texto 
+\begin_inset Quotes eld
+\end_inset
+
+6 veces
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+=(parent.value=="calcular") ? 2 + 3 : "2 + 3": Si el padre del nodo contiene
+ el texto 
+\begin_inset Quotes eld
+\end_inset
+
+calcular
+\begin_inset Quotes erd
+\end_inset
+
+ se mostrará un 5 en el nodo.
+ Si es otra cosa, se mostrará 
+\begin_inset Quotes eld
+\end_inset
+
+2 + 3
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Las fórmulas de freeplane son un recurso muy potente.
+ El último ejemplo es una expresión condicional: 
+\series bold
+expresión_booleana ? resultado_si_verdadero : resultado_si_falso
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+Si vamos a utilizar fórmulas con números decimales es conveniente modificar
+ el símbolo que utiliza Freeplane para la coma decimal pues en algunos casos
+ podemos obtener errores.
+ Para evitar errores de este tipo nos iremos a las preferencias, pestaña
+ de comportamiento y en la sección 
+\begin_inset Quotes eld
+\end_inset
+
+Formateo y análisis de datos
+\begin_inset Quotes erd
+\end_inset
+
+ elegimos del desplegable de Idioma para los formatos el inglés.
+\end_layout
+
+\begin_layout Subsection
+Elementos básicos
+\end_layout
+
+\begin_layout Standard
+Podemos 
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Operadores básicos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ver en la tabla siguiente un resumen de los operadores que podemos encontrar
+ en las fórmulas de Freeplane.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="14" columns="4">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Operador
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Se escribe
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ejemplo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Resultado
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+= 2 + 3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+= 11 - 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+= 2 * 3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+/
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+/
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+= 50 / 2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+potencia
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+**
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+= 3 ** 2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+paréntesis
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+( )
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3 * (10 + 5)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+45
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+número pi
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Math.PI
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+= Math.PI
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.141592
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+número e
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Math.E
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+= Math.E
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.718281
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+seno
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Math.sin( )
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+= Math.sin(2 * Math.PI)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+coseno
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Math.cos( )
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+= Math.cos(2 * Math.PI)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+tangente
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Math.tan( )
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+= Math.tan(2 * Math.PI)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+logaritmo decimal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Math.log10( )
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+= Math.log10(100)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+logaritmo neperiano
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Math.log( )
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+= Math.log(Math.E)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Elementos de los nodos
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Mapa-ejemplo-formulas"
+
+\end_inset
+
+Mapa ejemplo para las fórmulas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/formula_mapa_ejemplo.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Aparte de los elementos estáticos de cualquier fórmula tales como los operadores
+ anteriores y los números en nuestras fórmulas también podemos referirnos
+ a los distintos elementos de los nodos.
+ De esta forma podemos sumar en el nodo padre el valor de todos sus nodos
+ hijo o incluso acceder a los atributos de los nodos y operar con ellos.
+\end_layout
+
+\begin_layout Standard
+En la siguiente tabla encontramos cómo podemos referirnos a estos elementos.
+ Utiliza el mapa de la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Mapa-ejemplo-formulas"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ para los resultados de los ejemplos.
+ La fórmula la
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Referencias a nodos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ escribimos en el nodo central que contiene el texto 5432.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="3">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Descripción
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ejemplo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Resultado
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Valor del padre
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+= 2 * parent.value
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Valores de los nodos hijos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+= children.value
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[1, 2, 3, 10, 20, 30]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cantidad de hijos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+= children.size
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+suma de los nodos hijos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+= children.sum(0)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+66
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Atributo coste del nodo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+= node['Coste']
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+54321 (texto)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Valor numérico del coste
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+= node['Coste'].to.num0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+54321 (número)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Atributo Coste del padre
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+= parent['Coste']
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3020
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Precio final = Coste * IVA
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+= node['Coste'].to.num0 * node['IVA'].to.num0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5432.1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+Hay que hacer una puntualización.
+ Por defecto Freeplane trata a todos los números como si fuera texto.
+ Esto quiere decir que no se puede realizar operaciones numéricas con ellos
+ puesto que son tratados como si fueran letras.
+ Para poder operar hay que acceder a su valor numérico, Esto es lo que hacemos
+ al escribir parent.
+\series bold
+value
+\series default
+ ó node['Coste'].
+\series bold
+to.num0
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+Realmente las fórmulas de Freeplane son más que fórmulas pues podemos poner
+ en ellas cualquier código que produzca un resultado.
+ Esto lo veremos con mucha más profundidad en la parte avanzada.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Ejemplo-formula"
+
+\end_inset
+
+Ejemplo de un nodo con fórmula
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/facturas_ejemplo.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Usando las fórmulas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Vemos en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Ejemplo-formula"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ nuestro mapa con un ejemplo.
+ El nodo con el texto 
+\begin_inset Quotes eld
+\end_inset
+
+3 Facturas
+\begin_inset Quotes erd
+\end_inset
+
+ contiene realmente la fórmula que aparece en el cuadro 
+\begin_inset Quotes eld
+\end_inset
+
+Editar fórmula
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Dicho cuadro de diálogo es el que aparece cuando editamos un nodo con una
+ fórmula.
+ A medida que vayamos añadiendo más facturas ese número irá cambiando pues
+ contiene la expresión 
+\begin_inset Quotes eld
+\end_inset
+
+children.size
+\begin_inset Quotes erd
+\end_inset
+
+ que nos proporciona la cantidad de hijos del nodo indicado.
+\end_layout
+
+\begin_layout Section
+Fechas
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Gestión-del-tiempo"
+
+\end_inset
+
+Gestión del tiempo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/Administrar_el_tiempo.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Freeeplane tiene características para gestionar el tiempo tales como recordatori
+os y fechas en los nodos.
+ La herramienta fundamental para la gestión del tiempo es accesible mediante
+ Herramientas, Mostrar calendario.
+ Aparecerá la ventana de Administración del tiempo (ver figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Gestión-del-tiempo"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Con ella podremos:
+\end_layout
+
+\begin_layout Itemize
+Añadir la fecha actual al nodo
+\end_layout
+
+\begin_layout Itemize
+Añadir 
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Usos del planificador
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+un recordatorio en la fecha seleccionada
+\end_layout
+
+\begin_layout Itemize
+Añadir un recordatorio en otra fecha posterior
+\end_layout
+
+\begin_layout Itemize
+Ejecutar un script cuando llegue una fecha / hora determinada.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Planificador-del-tiempo"
+
+\end_inset
+
+Planificador del tiempo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/Planificador_del_tiempo.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Tres nodos con recordatorios
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En dicha herramienta se pueden ver tres minicalendarios y una hora bajo
+ ellos.
+ Pinchando en el botón 
+\begin_inset Quotes eld
+\end_inset
+
+Hoy
+\begin_inset Quotes erd
+\end_inset
+
+ los calendarios y hora se posicionan en la fecha y hora actuales.
+ Podemos irnos a otros meses si cambiamos el mes del centro (eligiéndolo
+ del desplegable del mes que hay a la izquierda del año).
+ También podemos modificar la hora.
+ Una vez cambiada la fecha / hora de los minicalendarios podremos añadir
+ dicha fecha al nodo con el botón 
+\begin_inset Quotes eld
+\end_inset
+
+Agregar Fecha a la selección
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+O también un recordatorio en esta fecha al pinchar en 
+\begin_inset Quotes eld
+\end_inset
+
+Recordar En Esta Fecha
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Cuando llegue ese momento Freeplane mostrará un aviso que puede configurarse
+ en las preferencias de la aplicación.
+ Normalmente se verán los nodos con los recordatorios parpadeando y mostrando
+ un pequeño icono.
+ Para avisar en el caso de que el nodo con el recordatorio esté colapsado,
+ Freeplane hará parpadear toda la ruta desde la raíz al nodo con el recordatorio.
+ También se puede configurar para que aparezca una ventana emergente con
+ la notificación.
+ 
+\end_layout
+
+\begin_layout Standard
+Cuando nos salte la notificación podremos ir a ella y eliminarla para que
+ el nodo no siga parpadeando.
+\end_layout
+
+\begin_layout Standard
+Si en lugar de recordarlo en esa fecha queremos recordarlo días u horas
+ posteriores pincharemos en 
+\begin_inset Quotes eld
+\end_inset
+
+Recordar más tarde
+\begin_inset Quotes erd
+\end_inset
+
+ indicando previamente cuantos días / horas / minutos de retraso tendrá
+ el aviso (desplegables bajo el botón 
+\begin_inset Quotes eld
+\end_inset
+
+Agregar Fecha a la selección
+\begin_inset Quotes erd
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Podemos efectuar cierta planificación de tareas añadiendo recordatorios
+ a los nodos que contienen las tareas a realizar.
+ Una vez hecho tenemos acceso al planificador si pinchamos en Herramientas,
+ Mostrar la lista del planificador de tiempo.
+ Aparecerá la ventana de la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Planificador-del-tiempo"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ en la que se pueden ver las tareas planificadas, su fecha así como los
+ iconos, detalles, notas y fechas de creación y modificación de los nodos
+ en cuestión.
+\end_layout
+
+\begin_layout Chapter
+Definiendo estilos y plantillas
+\end_layout
+
+\begin_layout Section
+Introducción
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Definiendo-estilos"
+
+\end_inset
+
+Definiendo estilos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/Estilos_definir.png
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En el capítulo 3 hemos modificado el aspecto de nuestro mapa cambiando alguno
+ de sus elementos.
+ Para ello íbamos aplicando uno a uno todos los cambios que necesitábamos.
+ Y si queríamos dos nodos iguales no teníamos más remedio que ir al segundo
+ nodo y volver a aplicar los mismos cambios que en el primero.
+\end_layout
+
+\begin_layout Standard
+Para evitar el tedio que supone aplicar una y otra vez los mismos formatos
+ Freeplane dispone de los Estilos.
+ Un estilo es, por lo tanto, un conjunto de formatos al que damos un nombre.
+ De esta manera podemos aplicarlos todos juntos con un solo click.
+ Freeplane viene ya con un conjunto básico de estilos.
+ Si nos vamos al panel de formato lateral (que si recordáis es el elemento
+ número 6 en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Pantalla-de-Freeplane"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) veremos un desplegable que se llama 
+\begin_inset Quotes eld
+\end_inset
+
+Estilos
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Si lo expandimos nos aparecen los estilos, tal y como se ve en la figura
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Estilos-de-Freeplane"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Cuando escogemos uno de ellos veremos cómo se modifica el aspecto del nodo
+ seleccionado.
+\end_layout
+
+\begin_layout Standard
+Definir un estilo es muy fácil.
+ Para ello únicamente tenemos que aplicar todos los formatos a uno de los
+ nodos y una vez tenga el aspecto deseado le daremos un nombre mediante
+ el menú Formato, Gestionar estilos, Nuevo estilo a partir de la selección
+ con el nodo seleccionado.
+ Aparecerá el cuadro de la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Definiendo-estilos"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ donde escribiremos el nombre del estilo.
+\end_layout
+
+\begin_layout Section
+Estilos predefinidos
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Estilos-de-Freeplane"
+
+\end_inset
+
+Estilos de Freeplane
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/Estilos_definidos.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Freeplane incorpora ya algunos estilos definidos, como vemos en la figura
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Estilos-de-Freeplane"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Los estilos nivel 1 a nivel 10 son los que se aplican si activamos la opción
+ del panel de formato 
+\begin_inset Quotes eld
+\end_inset
+
+Color del borde automático
+\begin_inset Quotes erd
+\end_inset
+
+ y elegimos del desplegable 
+\begin_inset Quotes eld
+\end_inset
+
+por niveles
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Los colores que se aplican pueden modificarse pinchando en el botón 
+\begin_inset Quotes eld
+\end_inset
+
+Editar color de las líneas
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Si por el contrario elegimos 
+\begin_inset Quotes eld
+\end_inset
+
+por ramas
+\begin_inset Quotes erd
+\end_inset
+
+ los colores antes definidos se aplican a medida que se van añadiendo ramas.
+\end_layout
+
+\begin_layout Standard
+El estilo llamado Raíz es el que se aplica al nodo raíz.
+ Los denominados Tópico, Subtópico, Subsubtópico e Importante varían el
+ color, tamaño de la letra y en el último caso añade un icono.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Podemos hacer que Freeplane varíe el color de los nuevos nodos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Panel-del-estilo"
+
+\end_inset
+
+Panel del estilo del nodo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/panel_niveles.png
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Modificando los estilos ya definidos
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Editar-estilos"
+
+\end_inset
+
+Editar estilos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/Editar_estilos.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Modificando los estilos ya definidos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A medida que vayamos definiendo nuestros propios estilos éstos irán apareciendo
+ en los desplegables de los estilos de los nodos.
+ Una opción fundamental a la hora de trabajar con estilos en freeplane es
+ el Editor de estilos que podemos ver en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Editar-estilos"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Es un mapa en el cual aparecen todos los estilos del mapa con el que estamos
+ trabajando.
+ Se muestra al pinchar en Formato, Gestionar estilos, editar estilos.
+\end_layout
+
+\begin_layout Standard
+Mediante este panel podemos cambiar el formato del estilo así como borrar
+ los estilos que no nos interesen.
+ Vemos que aparece desplegado continuamente el panel de formato lateral
+ de la derecha.
+\end_layout
+
+\begin_layout Standard
+Hay cinco estilos interesantes: Por defecto, Contenido, Atributos Nota y
+ Nodo Flotante.
+\end_layout
+
+\begin_layout Standard
+Por defecto es el formato que tienen todos los nodos si no les hemos cambiado
+ nada.
+ Podemos cambiar, por ejemplo, el color y el tamaño de todos los nodos al
+ modificar este estilo.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Contenido
+\series default
+ es el formato que se aplica a los detalles del nodo que, como hemos visto,
+ es el texto que podemos añadir bajo el nodo.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Atributos
+\series default
+ nos indica cómo se verán los atributos de los nodos.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Not
+\series default
+a indica cómo se verá la nota en el panel de notas.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Nodo Flotante
+\series default
+: formato aplicado a los nodos flotantes.
+ Un nodo flotante es aquel que podemos añadir al mapa al hacer doble click
+ en una zona del mismo mientras mantenemos presionada la tecla 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tecla{INSERT}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Vemos que los estilos Tópico, Subtópico, Subsubtópico e Importante aparecen
+ en la rama 
+\begin_inset Quotes eld
+\end_inset
+
+Estilos definidos por el usuario
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Estos estilos los podemos borrar pinchando con el botón derecho del ratón
+ y eligiendo 
+\begin_inset Quotes eld
+\end_inset
+
+Eliminar estilo definido por el usuario
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Los estilos definidos por nivel los borraríamos pinchando con el botón derecho
+ en cualquier nodo y eligiendo 
+\begin_inset Quotes eld
+\end_inset
+
+Eliminar estilo automático por nivel
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Borrará el último nivel que haya (que inicialmente es el nivel 11).
+\end_layout
+
+\begin_layout Standard
+Una vez hechos los cambios deseados en los estilos ya podemos guardar.
+ Para ello pinchamos en el menú Archivo, De acuerdo.
+ Si nos hemos liado y no queremos guardar nada pincharíamos en Archivo,
+ Anular.
+\end_layout
+
+\begin_layout Section
+Guardando nuestros estilos: las plantillas
+\end_layout
+
+\begin_layout Standard
+Si te has pasado mucho tiempo creando estilos en tu mapa podrás guardarlos
+ para utilizarlos como plantilla en lugar de la plantilla inicial que se
+ carga al crear un nuevo mapa.
+\end_layout
+
+\begin_layout Standard
+Como puedes imaginar, una plantilla es un diseño básico del mapa con estilos
+ definidos.
+ Para poder crearla tenemos varias opciones que se explican en las secciones
+ siguientes
+\end_layout
+
+\begin_layout Subsection
+Utilizar estilos definidos en otro mapa
+\end_layout
+
+\begin_layout Standard
+Cuando creamos un nuevo mapa podemos cargar los estilos de otro mediante
+ el menú Formato, Gestionar estilos, cargar estilos del mapa...
+\end_layout
+
+\begin_layout Subsection
+Guardar el mapa actual como plantilla
+\end_layout
+
+\begin_layout Standard
+Imaginemos que queremos usar el mapa que llevamos haciendo durante todo
+ este tiempo como plantilla.
+ De esta forma cada vez que tengamos un proyecto nuevo, al crearlo con esta
+ plantilla ya aparecerán todas las ramas fundamentales: Tareas, Recursos,
+ Gente, Resultados y Elementos para ordenar así como los estilos que hayamos
+ definido.
+\end_layout
+
+\begin_layout Standard
+Esto se realiza guardando el mapa que queremos usar como plantilla en el
+ directorio templates del directorio del usuario que podemos mostrar al
+ pinchar en herramientas, abrir el directorio del usuario.
+\end_layout
+
+\begin_layout Standard
+Cualquier mapa que aparezca en esa carpeta se podrá utilizar como plantilla.
+ 
+\end_layout
+
+\begin_layout Subsection
+Usar la plantilla
+\end_layout
+
+\begin_layout Standard
+Una vez ya tengamos nuestra plantilla guardada en la ubicación correcta
+ podremos usarla al elegir el menú Archivo, Nuevo mapa usando plantilla.
+ Freeplane mostrará la carpeta Templates del directorio del usuario donde
+ podremos elegir la plantilla que queramos.
+\end_layout
+
+\begin_layout Standard
+También podemos utilizar cualquier otro mapa aunque no lo hayamos guardado
+ como plantilla si en la ventana anterior navegamos hasta dicho mapa y lo
+ elegimos.
+\end_layout
+
+\begin_layout Standard
+Los pasos para crear una plantilla son, por lo tanto:
+\end_layout
+
+\begin_layout Enumerate
+Definir la estructura de nodos que queremos que aparezca inicialmente
+\end_layout
+
+\begin_layout Enumerate
+Crear los estilos del mapa
+\end_layout
+
+\begin_layout Enumerate
+Guardarlo en el directorio templates del directorio del usuario
+\end_layout
+
+\begin_layout Enumerate
+Crear un nuevo mapa a partir de la plantilla anterior.
+\end_layout
+
+\begin_layout Section
+Creando una plantilla para nuestros proyectos
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Plantilla-fase-1"
+
+\end_inset
+
+Creación de una plantilla.
+ Fase 1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/Plantilla_fase_1.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como práctica vamos a utilizar el mapa de los primeros capítulos como base
+ para una plantilla para mapas mentales de gestión de proyectos.
+ Vamos a partir de una versión modificada de aquel mapa.
+ Aparece en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Plantilla-fase-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Abrir vuestro mapa y realizar todas las modificaciones para que coincida
+ con el de la figura indicada.
+ 
+\end_layout
+
+\begin_layout Standard
+Ahora vamos a definir una serie de estilos que nos faciliten la labor a
+ la hora de introducir nuevos elementos.
+ Vamos a partir de las facturas.
+ Cambiaremos su forma para que sea rectangular de color de fondo gris claro.
+ Le pondremos ancho mínimo y máximo 5 y márgenes cero.
+ Cuando tengamos un nodo con estos formatos aplicados lo definiremos como
+ estilo:
+\end_layout
+
+\begin_layout Enumerate
+Seleccionamos el nodo
+\end_layout
+
+\begin_layout Enumerate
+Elegimos el menú Formato, Gestionar Estilos, Nuevo estilo a partir de la
+ selección y tecleamos Lista recta.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0col%
+width "50col%"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Estilo-facturas"
+
+\end_inset
+
+Definiendo el estilo para las facturas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/Plantilla_fase_2.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Ya tenemos el estilo para este tipo de documentos.
+ Podemos usarlo, aparte de para las facturas, para otras cosas.
+ Por eso lo hemos llamado 
+\begin_inset Quotes eld
+\end_inset
+
+lista recta
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+El tipo de letra por defecto es algo feucho.
+ Vamos a cambiarlo:
+\end_layout
+
+\begin_layout Enumerate
+Menú Formato, Gestionar Estilos, Editar estilos para sacar el mapa con los
+ estilos definidos.
+ Vemos que ya aparece el que acabamos de definir, 
+\begin_inset Quotes eld
+\end_inset
+
+lista recta
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Pinchamos en el nodo 
+\begin_inset Quotes eld
+\end_inset
+
+Por defecto
+\begin_inset Quotes erd
+\end_inset
+
+ y elegimos como tipo de letra uno algo más atractivo.
+ Por ejemplo, Lucinda Sans.
+\end_layout
+
+\begin_layout Enumerate
+Salimos mediante el menú Archivo, De acuerdo.
+ Vemos que se han modificado todos los nodos.
+\end_layout
+
+\begin_layout Standard
+La rama para las fases del proyecto no está muy trabajada.
+ Sería mejor usar otro tipo de estructura.
+ Primero vamos a borrar todas las tareas.
+ Luego crearemos los nodos en la rama 
+\begin_inset Quotes eld
+\end_inset
+
+Fases del proyecto
+\begin_inset Quotes erd
+\end_inset
+
+ tal y como aparecen en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Plantilla-fase-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Plantilla-fase-2"
+
+\end_inset
+
+Creación de una plantilla.
+ Fase 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/Plantilla_fase_3.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los hitos son nodos de forma de burbuja con ancho máximo y mínimo de 10,
+ fondo negro y letras blancas en negrita.
+ Hemos arrastrado manualmente los nodos para que queden debajo del nodo
+ padre y darle así un aspecto más atractivo a esa rama.
+ Las fases y subfases son nodos con forma de bifurcación y anchos mínimo
+ y máximo de 5 que también hemos arrastrado hacia abajo.
+ Los detalles de las subfases con nodos de tipo bifurcación de tamaño de
+ letra de 8 sin anchos definidos.
+ Lamentablemente, la posición de los nodos no se puede fijar mediante estilos
+ por lo que debemos hacerlo manualmente.
+ Sin embargo podemos guardar la plantilla con un par de Hitos y fases de
+ ejemplo.
+\end_layout
+
+\begin_layout Standard
+Cuando ya tenemos la estructura creada definimos tres estilos: uno para
+ el hito, otro para la fase y subfase y otro para los detalles de las subfases.
+\end_layout
+
+\begin_layout Standard
+Para las personas definiremos dos estilos: uno para el hombre con un icono
+ de un hombre y otro con el icono de una mujer.
+ Serán ovalados pero marcando la casilla Uniforme para que sean círculos.
+ Podemos definir un ancho determinado para darle un aspecto más uniforme.
+ Al final los estilos quedan tal y como aparecen en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Estilos-de-plantilla"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Los 6 estilos que hemos definido
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Estilos-de-plantilla"
+
+\end_inset
+
+Estilos de nuetra plantilla
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/Plantilla_fase_4.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ahora únicamente nos queda guardar la plantilla para poder utilizarla con
+ los proyectos nuevos.
+ Para ello elegimos el menú Archivo guardar.
+ Le ponemos de nombre 
+\begin_inset Quotes eld
+\end_inset
+
+Proyecto
+\begin_inset Quotes erd
+\end_inset
+
+ y lo dejamos en un lugar conocido, por ejemplo el escritorio del ordenador.
+\end_layout
+
+\begin_layout Standard
+Luego vamos al menú Herramientas, Abrir el directorio del usuario y arrastramos
+ el archivo del escritorio al directorio templates.
+\end_layout
+
+\begin_layout Standard
+Ahora ya podemos crear nuestros mapas de proyectos eligiendo Archivo, Nuevo
+ mapa a partir de plantilla.
+ Escogemos la plantilla proyecto.mm y obtenemos la imagen de la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Mapa-plantilla-proyecto"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ En el desplegable superior aparecen los estilos que hemos definido: 
+\begin_inset Quotes eld
+\end_inset
+
+Lista recta
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+Hito
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+Fase
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+Fase-elemento
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+Hombre
+\begin_inset Quotes erd
+\end_inset
+
+ y 
+\begin_inset Quotes eld
+\end_inset
+
+Mujer
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Mapa-plantilla-proyecto"
+
+\end_inset
+
+Nuevo mapa creado a partir de la plantilla del proyecto
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Archivos/Plantilla_fase_5.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Utilizando el mapa con otras aplicaciones
+\end_layout
+
+\begin_layout Section
+Utilizándolo como imagen
+\end_layout
+
+\begin_layout Section
+Guardando el esquema de la información
+\end_layout
+
+\begin_layout Section
+Mapa como página web
+\end_layout
+
+\begin_layout Section
+Importar los favoritos del navegador
+\end_layout
+
+\begin_layout Section
+Importar la estructura de carpetas de nuestras unidades
+\end_layout
+
+\begin_layout Chapter
+Buscando información en nuestro mapa
+\end_layout
+
+\begin_layout Section
+Búsqueda rápida
+\end_layout
+
+\begin_layout Section
+Filtros
+\end_layout
+
+\begin_layout Chapter
+Haciendo presentaciones con Freeplane
+\end_layout
+
+\begin_layout Section
+Enseñando nuestro mapa
+\end_layout
+
+\begin_layout Section
+Presentaciones complejas
+\end_layout
+
+\begin_layout Section
+Diseñando nuestras presentaciones
+\end_layout
+
+\begin_layout Part
+Freeplane avanzado
+\end_layout
+
+\begin_layout Chapter
+Texto avanzado
+\end_layout
+
+\begin_layout Section
+HTML en los nodos
+\end_layout
+
+\begin_layout Section
+Latex en los nodos
+\end_layout
+
+\begin_layout Section
+Aprendizaje mediante mapas mentales
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../mapa/Split_ideas.png
+	lyxscale 25
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Dividir-Ideas"
+
+\end_inset
+
+Dividir Ideas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El cerebro procesa mejor la información contenida en los mapas mentales
+ si los nodos tienen todos el mismo ancho y si el texto está centrado en
+ el nodo.
+ Si procuramos poner en cada nodo una palabra ó secuencia de ideas le facilitare
+mos la tarea.
+ Para ello elegiremos las palabras que provoquen que en nuestro cerebro
+ se disparen las asociaciones de ideas.
+ Estas palabras las demominamos 
+\begin_inset Quotes eld
+\end_inset
+
+disparadores
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Esto hace que el conocimiento contenido en el mapa sea más limpio.
+ Estas palabras 
+\begin_inset Quotes eld
+\end_inset
+
+disparadores
+\begin_inset Quotes erd
+\end_inset
+
+ son palabras cortas que contienen gran cantidad de conocimiento y que provocan
+ que nuestro cerebro se llene de nuevas ideas.
+ Podemos organizar el conocimiento del mapa utilizando estas palabras de
+ forma que incluyamos toda la información dentro de sus nodos.
+\end_layout
+
+\begin_layout Standard
+El cerebro puede dedicarse a una tarea en cada momento y es necesario hacerle
+ las cosas lo más atractivas posible.
+ Por todo ello dividiremos las ideas al máximo.
+ Es mejor tener 5 nodos con el mismo padre que indiquen
+\begin_inset Quotes eld
+\end_inset
+
+Dividir
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+Ideas
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+lo
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+Máximo
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+Posible
+\begin_inset Quotes erd
+\end_inset
+
+ que uno solo con la frase completa, tal y como se muestra en la parte superior
+ de la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Dividir-Ideas"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Para el cerebro procesar la rama superior es más sencillo que leer el párrafo
+ completo de la rama inferior.
+\end_layout
+
+\begin_layout Standard
+Una vez preparado el mapa tal y como se ha indicado sólo hay que abrir y
+ cerrar las ramas del mapa para poder jugar con el conocimiento incluido
+ en el mapa.
+ Otra cuestión es si debemos realizar una división horizontal ó vertical
+ (ver figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:División-horizontal-vertical"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Esto depende de la cantidad de información de las ideas y del espaio que
+ tengas en la pantalla.
+ En este sentido es más util mantener Freeplane en pantalla completa para
+ maximizar el área de trabajo.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../mapa/Organizar_hor_vert.png
+	lyxscale 25
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:División-horizontal-vertical"
+
+\end_inset
+
+División horizontal y vertical del conocimiento
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+No debemos estresar al cerebro con nodos con párrafos complejos o con demasiados
+ iconos ó imágenes.
+ Favoreceremos el aprendizaje mejor si dividimos estos nodos en unidades
+ más simples organizadas horizontal o verticalmene y utilizando nodos de
+ igual tamaño y simétricos, con el texto en el centro y usando palabras
+ que sirvan como disparadores.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../mapa/split_ejemplo.png
+	lyxscale 25
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:división-ejemplo"
+
+\end_inset
+
+Ejemplo de división del conocimiento
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Freeplane facilita esta división del conocimiento con opciones que encontramos
+ en las preferencias de freeplane en la pestaña de 
+\begin_inset Quotes eld
+\end_inset
+
+Comportamiento
+\begin_inset Quotes erd
+\end_inset
+
+, en la sección 
+\begin_inset Quotes eld
+\end_inset
+
+Dividir nodo en palabras
+\begin_inset Quotes erd
+\end_inset
+
+ y a la hora de hacer el mapa bajo el menú Editar / Nodo central:
+\end_layout
+
+\begin_layout Itemize
+Dividir con 1 palabra en cada línea
+\end_layout
+
+\begin_layout Itemize
+Dividir con 2 palabras en cada línea
+\end_layout
+
+\begin_layout Itemize
+Unir nodos
+\end_layout
+
+\begin_layout Chapter
+Otros elementos
+\end_layout
+
+\begin_layout Section
+Fórmulas avanzadas
+\end_layout
+
+\begin_layout Section
+Introducción a los scripts
+\end_layout
+
+\begin_layout Chapter
+Formato avanzado
+\end_layout
+
+\begin_layout Section
+Estilos condicionales
+\end_layout
+
+\begin_layout Section
+Incluir atributos en los estilos
+\end_layout
+
+\begin_layout Chapter
+Búsquedas avanzadas
+\end_layout
+
+\begin_layout Section
+Expresiones regulares en Freeplane
+\end_layout
+
+\begin_layout Section
+Filtros avanzados
+\end_layout
+
+\begin_layout Chapter
+Configurando Freeplane
+\end_layout
+
+\begin_layout Section
+El directorio del usuario
+\end_layout
+
+\begin_layout Section
+Opciones de configuración
+\end_layout
+
+\begin_layout Section
+Opciones en línea de comandos
+\end_layout
+
+\begin_layout Section
+Variables de entorno
+\end_layout
+
+\begin_layout Chapter
+Programando scripts
+\end_layout
+
+\begin_layout Section
+Tutorial rápido de groovy
+\end_layout
+
+\begin_layout Section
+El editor
+\end_layout
+
+\begin_layout Section
+Primeros scripts
+\end_layout
+
+\begin_layout Section
+La API de Freeplane
+\end_layout
+
+\begin_layout Section
+Scripts de inicio
+\end_layout
+
+\begin_layout Section
+Configuración de Freeplane para la ejecución de scripts
+\end_layout
+
+\end_body
+\end_document

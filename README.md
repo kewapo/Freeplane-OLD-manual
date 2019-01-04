@@ -1,2 +1,2 @@
 # Freeplane-manual
-Spanish Freeplane manujal
+Spanish Freeplane manual

@@ -142,6 +142,37 @@ customHeadersFooters
 \begin_body
 
 \begin_layout Title
+
+\size normal
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Pendiente de añadir
+\end_layout
+
+\begin_layout Plain Layout
+—————————
+\end_layout
+
+\begin_layout Itemize
+Revisar segunda parte completa.
+\end_layout
+
+\begin_layout Itemize
+Revisar glosario.
+\end_layout
+
+\begin_layout Itemize
+Cómo hacer add-ons.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
 Manual de Freeplane
 \begin_inset Newline newline
 \end_inset
@@ -152,7 +183,7 @@ Manual de Freeplane
 
 \end_inset
 
-
+–
 \end_layout
 
 \begin_layout Author
@@ -199,6 +230,125 @@ tiny, colframe=brown
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+Acerca del autor
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 3cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement i
+overhang 0in
+width "35col%"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Box Shadowbox
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "22col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Archivos/autor.png
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Luis Javier González Caballero es un Técnico en Informática con amplia experienc
+ia en soporte a usuarios.
+ Ha realizado algunos trabajos de programación, fundamentalmente en Python.
+ Es Ingeniero Técnico Industrial por la 
+\begin_inset CommandInset href
+LatexCommand href
+name "Universidad de León"
+target "https://www.unileon.es"
+literal "false"
+
+\end_inset
+
+ e Ingeniero en Informática por la 
+\begin_inset CommandInset href
+LatexCommand href
+name "Universidad de Educación Nacional a Distancia"
+target "https://www.uned.es"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Es una persona activa con una gran capacidad de aprendizaje, lo que le permite
+ ponerse al día rápidamente en los proyectos en los que se involucra.
+\end_layout
+
+\begin_layout Standard
+Aparte de su carrera profesional colabora con numerosas organizaciones sin
+ ánimo de lucro y proyectos libres y es amante de los animales.
+ Vive en León, una pequeña ciudad en el noroeste de España con su familia.
+\end_layout
+
+\begin_layout Standard
+\align right
+\begin_inset Graphics
+	filename Archivos/Logo-correo.jpg
+	BoundingBox 0bp 10bp 24bp 24bp
+
+\end_inset
+
+kewapo@gmail.com
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
 
@@ -6361,6 +6511,24 @@ Guardando nuestros estilos: las plantillas
 \end_layout
 
 \begin_layout Standard
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Guardando la plantilla para su uso posterior
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 Si te has pasado mucho tiempo creando estilos en tu mapa podrás guardarlos
  para utilizarlos como plantilla en lugar de la plantilla inicial que se
  carga al crear un nuevo mapa.
@@ -6478,6 +6646,25 @@ Creación de una plantilla.
 \begin_inset Graphics
 	filename Archivos/Plantilla_fase_1.png
 	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+¡Vamos con un ejemplo!
+\end_layout
 
 \end_inset
 
@@ -6923,6 +7110,25 @@ Introducción
 
 \begin_layout Standard
 \align center
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Formatos reconocidos por Freeplane para exportar el mapa
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
@@ -7284,6 +7490,25 @@ Exportamos el mapa como archivo de excel
 \end_inset
 
 
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+El mapa exportado a Excel
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -7332,6 +7557,24 @@ Importando datos
 \end_layout
 
 \begin_layout Standard
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Usaremos el portapapeles para pasar información a Freeplane
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 Podemos insertar ramas enteras a nuestro mapa de freeplane directamente
  desde un editor de textos 
 \series bold
@@ -7641,6 +7884,25 @@ Búsqueda rápida
 \end_layout
 
 \begin_layout Standard
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Debajo se muestra la barra de búsqueda
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \begin_inset Wrap figure
 lines 0
 placement r
@@ -7812,6 +8074,24 @@ Expresiones regulares de Freeplane
 \end_layout
 
 \begin_layout Standard
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+En la sección 12.2 se profundizará más sobre este tema
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 Una de las opciones de búsqueda más potentes son las expresiones regulares.
  Son caracteres comodín que nos permiten hacer búsquedas genéricas.
  Así si tecleamos 
@@ -8299,10 +8579,6 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -8340,6 +8616,33 @@ Barra de herramientas de filtros
 \end_layout
 
 \begin_layout Standard
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Podemos 
+\begin_inset Quotes eld
+\end_inset
+
+podar
+\begin_inset Quotes erd
+\end_inset
+
+ nuestro mapa aplicándole un filtro.
+ Mostrará solo los nodos coincidentes.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 Otra forma de visualizar la información que buscamos es aplicar un filtro
  a los nodos.
  Un filtro sirve para ver determinados nodos del mapa ocultando el resto.
@@ -8704,6 +9007,24 @@ Introducción
 \end_layout
 
 \begin_layout Standard
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Custom Color Box 1
+status open
+
+\begin_layout Plain Layout
+Las presentaciones avanzadas se explican en el capítulo 11
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 Contar con un apoyo visual a la hora de presentar un proyecto o incluso
  a nosotros mismos puede ser la diferencia entre el éxito y el fracaso.
  Si bien son de sobra conocidos los programas específicos para la realización
@@ -9409,7 +9730,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-Las referencias al fichero pueden ser realtivas como el ejemplo superior
+Las referencias al fichero pueden ser relativas como el ejemplo superior
  o absolutas como en 
 \begin_inset listings
 lstparams "language=HTML,breaklines=true"
@@ -9812,7 +10133,24 @@ Los documentos escritos en LaTeX constan de instrucciones incluidas con
 \end_layout
 
 \begin_layout Standard
-Por ejemplo, si quisieramos escribir la frase 
+Si deseamos que un nodo sea mostrado como un nodo Latex deberemos comenzar
+ a escribir con la expresion 
+\begin_inset listings
+lstparams "breaklines=true"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+, como se ve a continuación.
+ Por ejemplo, si quisiéramos escribir la frase 
 \begin_inset Quotes eld
 \end_inset
 
@@ -9835,9 +10173,9 @@ LaTeX
 
  es un 
 \bar under
-sistema de creación de documentos
+sistema
 \bar default
- 
+ de creación de documentos 
 \series bold
 de alta calidad tipográfica
 \series default
@@ -9859,11 +10197,13 @@ status open
 
 
 \backslash
+latex 
+\backslash
 LaTeX es un 
 \backslash
-uline{sistema de creación de documentos} 
+underline{sistema} de redacción de documentos 
 \backslash
-textbf{de alta calidad tipográfica} orientado a la 
+textbf{de alta calidad tipográfica } orientado a la 
 \backslash
 textit{composición de libros}
 \end_layout
@@ -9882,7 +10222,7 @@ LaTeX Este comando imprime el logo de Latex.
 \begin_layout Itemize
 
 \backslash
-uline{texto} sirver para subrayar.
+underline{texto} sirver para subrayar.
 \end_layout
 
 \begin_layout Itemize
@@ -20574,10 +20914,20 @@ un
 
 nodo: Pinchar en el círculo de expansión de un nodo para que se oculten
  sus hijos.
- Figura 
+ Figuras 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Circulos-para-expandir"
+reference "fig:Mapa-expandido"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Mapa-colapsado"
 plural "false"
 caps "false"
 noprefix "false"
